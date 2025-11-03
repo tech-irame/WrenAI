@@ -102,7 +102,7 @@ const playDataModelingGuide = (
             align with business logic, retrieve precise data, and generate
             meaningful insights.{' '}
             <a
-              href="https://docs.getwren.ai/oss/guide/modeling/overview"
+              href="https://docs.irame.ai/oss/guide/modeling/overview"
               target="_blank"
               rel="noopener noreferrer"
             >

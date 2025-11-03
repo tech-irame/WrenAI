@@ -117,7 +117,7 @@ export default function ViewSQLTabContent(props: AnswerResultProps) {
             syntax.
             <Typography.Link
               className="underline ml-1"
-              href="https://docs.getwren.ai/oss/guide/home/wren_sql"
+              href="https://docs.irame.ai/oss/guide/home/wren_sql"
               target="_blank"
               rel="noopener noreferrer"
             >

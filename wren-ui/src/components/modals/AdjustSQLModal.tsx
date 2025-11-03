@@ -146,7 +146,7 @@ export default function AdjustSQLModal(props: Props) {
               based on ANSI SQL and optimized for Irame AI.{` `}
               <Typography.Link
                 type="secondary"
-                href="https://docs.getwren.ai/oss/guide/home/wren_sql"
+                href="https://docs.irame.ai/oss/guide/home/wren_sql"
                 target="_blank"
                 rel="noopener noreferrer"
               >

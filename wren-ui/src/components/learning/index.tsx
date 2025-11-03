@@ -137,25 +137,25 @@ const getData = (
     {
       id: LEARNING.CREATING_MODEL,
       title: 'Creating a model',
-      href: 'https://docs.getwren.ai/oss/guide/modeling/models',
+      href: 'https://docs.irame.ai/oss/guide/modeling/models',
       onClick: () => saveRecord(LEARNING.CREATING_MODEL),
     },
     {
       id: LEARNING.CREATING_VIEW,
       title: 'Creating a view',
-      href: 'https://docs.getwren.ai/oss/guide/modeling/views',
+      href: 'https://docs.irame.ai/oss/guide/modeling/views',
       onClick: () => saveRecord(LEARNING.CREATING_VIEW),
     },
     {
       id: LEARNING.WORKING_RELATIONSHIP,
       title: 'Working on relationship',
-      href: 'https://docs.getwren.ai/oss/guide/modeling/relationships',
+      href: 'https://docs.irame.ai/oss/guide/modeling/relationships',
       onClick: () => saveRecord(LEARNING.WORKING_RELATIONSHIP),
     },
     {
       id: LEARNING.CONNECT_OTHER_DATA_SOURCES,
       title: 'Connect to other data sources',
-      href: 'https://docs.getwren.ai/oss/guide/connect/overview',
+      href: 'https://docs.irame.ai/oss/guide/connect/overview',
       onClick: () => saveRecord(LEARNING.CONNECT_OTHER_DATA_SOURCES),
     },
   ] as LearningConfig[];
@@ -173,7 +173,7 @@ const getData = (
     {
       id: LEARNING.VIEW_FULL_SQL,
       title: 'View full SQL',
-      href: 'https://docs.getwren.ai/oss/guide/home/answer#view-sqlview-full-sql',
+      href: 'https://docs.irame.ai/oss/guide/home/answer#view-sqlview-full-sql',
       onClick: () => saveRecord(LEARNING.VIEW_FULL_SQL),
     },
   ];
