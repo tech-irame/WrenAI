@@ -17,7 +17,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Irame AI</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicon.svg" />
       </Head>
       <GlobalConfigProvider>
         <ApolloProvider client={apolloClient}>
