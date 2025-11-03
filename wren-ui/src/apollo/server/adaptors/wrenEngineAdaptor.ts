@@ -75,7 +75,7 @@ export interface IWrenEngineAdaptor {
   // metadata related, used to fetch metadata of duckdb
   listTables(): Promise<CompactTable[]>;
 
-  // config wren engine
+  // config Irame engine
   patchConfig(config: Record<string, any>): Promise<void>;
 
   // query
@@ -305,7 +305,7 @@ export class WrenEngineAdaptor implements IWrenEngineAdaptor {
         manifest,
       };
       logger.debug(
-        `Dry run wren engine with body: ${JSON.stringify(sql, null, 2)}`,
+        `Dry run Irame engine with body: ${JSON.stringify(sql, null, 2)}`,
       );
       const url = new URL(this.dryRunUrlPath, this.wrenEngineBaseEndpoint);
       const res: AxiosResponse<WrenEngineDryRunResponse[]> = await axios({
@@ -313,7 +313,7 @@ export class WrenEngineAdaptor implements IWrenEngineAdaptor {
         url: url.href,
         data: body,
       });
-      logger.debug(`Wren Engine Dry run success`);
+      logger.debug(`Irame Engine Dry run success`);
       return res.data;
     } catch (err: any) {
       logger.info(`Got error when dry running`);

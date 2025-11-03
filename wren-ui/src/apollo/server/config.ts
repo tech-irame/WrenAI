@@ -1,7 +1,7 @@
 import { pickBy } from 'lodash';
 
 export interface IConfig {
-  // wren ui
+  // Irame ui
   otherServiceUsingDocker: boolean;
 
   // database
@@ -14,10 +14,10 @@ export interface IConfig {
 
   persistCredentialDir?: string;
 
-  // wren engine
+  // Irame engine
   wrenEngineEndpoint: string;
 
-  // wren AI
+  // Irame AI
   wrenAIEndpoint: string;
   generationModel?: string;
 
@@ -49,7 +49,7 @@ export interface IConfig {
 }
 
 const defaultConfig = {
-  // wren ui
+  // Irame ui
   otherServiceUsingDocker: false,
 
   // database
@@ -64,10 +64,10 @@ const defaultConfig = {
 
   persistCredentialDir: `${process.cwd()}/.tmp`,
 
-  // wren engine
+  // Irame engine
   wrenEngineEndpoint: 'http://localhost:8080',
 
-  // wren AI
+  // Irame AI
   wrenAIEndpoint: 'http://localhost:5555',
 
   // ibis server
@@ -101,10 +101,10 @@ const config = {
     return undefined;
   })(),
 
-  // wren engine
+  // Irame engine
   wrenEngineEndpoint: process.env.WREN_ENGINE_ENDPOINT,
 
-  // wren AI
+  // Irame AI
   wrenAIEndpoint: process.env.WREN_AI_ENDPOINT,
   generationModel: process.env.GENERATION_MODEL,
 

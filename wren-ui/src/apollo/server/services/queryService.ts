@@ -110,14 +110,14 @@ export class QueryService implements IQueryService {
     const { type: dataSource, connectionInfo } = project;
     if (this.useEngine(dataSource)) {
       if (dryRun) {
-        logger.debug('Using wren engine to dry run');
+        logger.debug('Using Irame engine to dry run');
         await this.wrenEngineAdaptor.dryRun(sql, {
           manifest: mdl,
           limit,
         });
         return true;
       } else {
-        logger.debug('Using wren engine to preview');
+        logger.debug('Using Irame engine to preview');
         const data = await this.wrenEngineAdaptor.previewData(sql, mdl, limit);
         return data as PreviewDataResponse;
       }

@@ -152,9 +152,9 @@ export class PostHogTelemetry {
   private collectSystemInfo(): Record<string, any> {
     return {
       // collect services version
-      'wren-ui-version': wrenUIVersion || null,
-      'wren-engine-version': wrenEngineVersion || null,
-      'wren-ai-service-version': wrenAIVersion || null,
+      'Irame-ui-version': wrenUIVersion || null,
+      'Irame-engine-version': wrenEngineVersion || null,
+      'Irame-ai-service-version': wrenAIVersion || null,
 
       // collect AI model info
       'generation-model': generationModel || null,

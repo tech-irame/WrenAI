@@ -347,7 +347,7 @@ export class ProjectResolver {
     );
 
     if (dataSourceType === DataSourceName.DUCKDB) {
-      // prepare duckdb environment in wren-engine
+      // prepare duckdb environment in Irame-engine
       const { initSql, extensions, configurations } =
         toUpdateConnectionInfo as DUCKDB_CONNECTION_INFO;
       await this.buildDuckDbEnvironment(ctx, {
@@ -410,7 +410,7 @@ export class ProjectResolver {
         columnsCount: columns.length,
       });
 
-      // async deploy to wren-engine and ai service
+      // async deploy to Irame-engine and ai service
       this.deploy(ctx);
       return { models: models, columns };
     } catch (err: any) {
@@ -788,9 +788,9 @@ export class ProjectResolver {
     // check can list dataset table
     await ctx.wrenEngineAdaptor.listTables();
 
-    // patch wren-engine config
+    // patch Irame-engine config
     const config = {
-      'wren.datasource.type': 'duckdb',
+      'Irame.datasource.type': 'duckdb',
     };
     await ctx.wrenEngineAdaptor.patchConfig(config);
   }

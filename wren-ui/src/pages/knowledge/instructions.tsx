@@ -181,8 +181,8 @@ export default function ManageInstructions() {
         }
         description={
           <>
-            On this page, you can manage saved instructions that guide Wren AI
-            in generating SQL queries. These instructions help Wren AI
+            On this page, you can manage saved instructions that guide Irame AI
+            in generating SQL queries. These instructions help Irame AI
             understand your data model and business rules, improving query
             accuracy and reducing the need for manual refinements.{' '}
             <Link
